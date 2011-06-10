@@ -17,23 +17,16 @@ $(document).ready ->
 		$(".question").each (index) ->
 			booleans[index] = $(this).hasClass("true")
 	$("#go").bind 'click', (event) ->
-			@C = []
 			if(booleans[0])
 				p5.size(1024,768)
 			else
 				p5.size(1920,1080)
 			if(booleans[1])
 				p5.background 255
-				@C[0] = p5.color 0xffdddd
-				@C[1] = p5.color 0xddffdd
-				@C[2] = p5.color 0xddddff
-				@C[3] = p5.color 0xffffdd
+				@C = p5.color 0xffdddd
 			else
 				p5.background(0)
-				@C[0] = p5.color 0xffff00
-				@C[1] = p5.color 0x00ff00
-				@C[2] = p5.color 0xff0000
-				@C[3] = p5.color 0xdddd00
+				@C = p5.color 0xffff00
 			if(booleans[2])
 				@d = 80
 			else
@@ -43,7 +36,7 @@ $(document).ready ->
 			else
 				@amount = 10
 			for num in [1..@amount]
-				p5.tint(@C[p5.floor(p5.random(4))])
+				p5.tint(@C)
 				e = p5.random(80) + (@d - 40)
 				p5.image(p5.img[p5.floor(p5.random(5))], p5.random(p5.width), p5.random(p5.height), e, e)
 				p5.noTint
