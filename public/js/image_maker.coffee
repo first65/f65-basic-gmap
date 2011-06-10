@@ -17,6 +17,7 @@ $(document).ready ->
 		$(".question").each (index) ->
 			booleans[index] = $(this).hasClass("true")
 	$("#go").bind 'click', (event) ->
+			@C = []
 			if(booleans[0])
 				p5.size(1024,768)
 			else
