@@ -69,7 +69,9 @@ header {
 		margin-right:30px;
 		line-height:20px;
 		font-size:12px;
-		width:200px;
+		width:135px;
+		vertical-align:top;
+		display:inline-block;
 	}
 	div.headerCol {
 		margin-top:15px;
@@ -132,8 +134,9 @@ header {
 		margin:0 auto;
 		width:700px;
 		margin:{
-			left:150px;
+			left:auto;
 			bottom:150px;
+			top:20px;
 		}
 		-moz-column-count: 2;
 		-moz-column-gap: 40px;

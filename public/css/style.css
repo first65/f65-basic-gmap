@@ -84,10 +84,12 @@ header {
   background: #333;
   padding: 20px; }
   header div {
-		width:200px;
     margin-right: 30px;
     line-height: 20px;
-    font-size: 12px; }
+    font-size: 12px;
+    width: 135px;
+    vertical-align: top;
+    display: inline-block; }
   header div.headerCol {
     margin-top: 15px; }
   header canvas {
@@ -129,8 +131,9 @@ header {
   #container aside {
     margin: 0 auto;
     width: 700px;
-    margin-left: 150px;
+    margin-left: auto;
     margin-bottom: 150px;
+    margin-top: 20px;
     -moz-column-count: 2;
     -moz-column-gap: 40px;
     -webkit-column-count: 2;
