@@ -1,0 +1,150 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+
+
+/**
+ * Primary styles
+ *
+ * Authors: James Kindred, Anders Fisher
+ */
+
+$f65:#0B432C;
+body, select, input, textarea {
+	background:$f65;
+	color:#fff;
+	font-family:"HelveticaNeue-Medium", sans-serif;
+}
+
+header {
+	min-height:90px;
+	background:#333;
+	padding:20px;
+	div{
+		float:left;
+		margin-right:30px;
+		line-height:20px;
+	}
+	div.headerCol {
+		margin-top:15px;
+		font-size:12px;	
+	}
+	canvas{
+		display:none;
+	}
+}
+
+.clear {
+	clear:both;
+}
+
+#container {
+	width:1000px;
+	margin:0 auto;
+	article{
+		p{
+			padding:20px 0 0 ;
+			margin:0 auto;
+			margin-bottom:20px;
+			font:{
+				family:"HelveticaNeue-Bold", sans-serif;
+				size:30px;
+			}
+			text:{
+				shadow: 0px 2px 2px #171718;
+				align:center;
+			}
+			span.option{
+				font:{
+					family:Palatino, serif;
+					style:italic;
+					size:50px;	
+				}
+				width:200px;
+				&.selected{
+					text-shadow: 0px 2px 2px white;
+				}
+			}
+			span.or{
+				font-size: 20px;
+			  margin: 0 20px;
+			  position: relative;
+			  top: -10px;
+			}
+			#go{
+				background:#fff;
+				color:$f65;
+				width:auto;
+				padding:5px 7px;
+				text:{
+					decoration:none;
+					shadow:none;
+				}
+			}
+		}
+	}
+	aside {
+		margin:0 auto;
+		width:700px;
+		margin:{
+			left:150px;
+			bottom:150px;
+		}
+		-moz-column-count: 2;
+		-moz-column-gap: 40px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 40px;
+		column-count: 2;
+		column-gap: 40px;
+		p{
+			line-height:20px;
+			font-size:12px;
+			margin-bottom:10px;
+		}
+	}
+}
