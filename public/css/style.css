@@ -84,7 +84,7 @@ header {
   background: #333;
   padding: 20px; }
   header div {
-    float: left;
+		width:200px;
     margin-right: 30px;
     line-height: 20px;
     font-size: 12px; }
