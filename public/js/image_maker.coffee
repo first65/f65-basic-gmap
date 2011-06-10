@@ -17,28 +17,28 @@ $(document).ready ->
 		$(".question").each (index) ->
 			booleans[index] = $(this).hasClass("true")
 	$("#go").bind 'click', (event) ->
-			if(booleans[0])
-				p5.size(1024,768)
-			else
-				p5.size(1920,1080)
-			if(booleans[1])
-				p5.background 255
-				@C = p5.color 0xffdddd
-			else
-				p5.background(0)
-				@C = p5.color 0xffff00
-			if(booleans[2])
-				@d = 80
-			else
-				@d = 120
-			if(booleans[3])
-				@amount = 100
-			else
-				@amount = 10
-			for num in [1..@amount]
-				p5.tint(@C)
-				e = p5.random(80) + (@d - 40)
-				p5.image(p5.img[p5.floor(p5.random(5))], p5.random(p5.width), p5.random(p5.height), e, e)
-				p5.noTint
-			p5.save("f65.png")
+		if(booleans[0])
+			p5.size(1024,768)
+		else
+			p5.size(1920,1080)
+		if(booleans[1])
+			p5.background(0xffdddd)
+			#@C = p5.color(0xffffdd)
+		else
+			p5.background(0)
+			#@C = p5.color(0xffff00)
+		if(booleans[2])
+			@d = 80
+		else
+			@d = 120
+		if(booleans[3])
+			@amount = 100
+		else
+			@amount = 10
+		for num in [1..@amount]
+			#p5.tint(@C)
+			e = p5.random(80) + (@d - 40)
+			p5.image(p5.img[p5.floor(p5.random(5))], p5.random(p5.width), p5.random(p5.height), e, e)
+			#p5.noTint()
+		p5.save("f65.png")
 		return false;
