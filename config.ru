@@ -2,6 +2,10 @@ require 'rubygems'
 require 'open-uri'
 require 'sinatra'
 
+configure do
+	mime_type :manifest, 'text/cache-manifest'
+end
+
 set :public, File.dirname(__FILE__) + '/public'
 
 get '/' do

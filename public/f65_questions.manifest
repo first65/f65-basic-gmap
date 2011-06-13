@@ -1,0 +1,21 @@
+CACHE MANIFEST
+ 
+# Offline cache v0.1
+ 
+# css files
+/css/style.css
+
+# images
+/img/apple-touch-icon.png
+/img/circles.png
+/img/first65logo.png
+/img/flower.png
+/img/softstar.png
+/img/splat.png
+/img/splat2.png
+ 
+# js files
+/js/image_maker.coffee
+/js/libs/jquery-1.5.min.js
+/js/libs/processing-1.2.0.min.js
+/js/libs/coffee.script.js
