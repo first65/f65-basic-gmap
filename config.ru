@@ -3,7 +3,7 @@ require 'open-uri'
 require 'sinatra'
 
 configure do
-	mime_type :manifest, 'text/cache-manifest'
+	Rack::Mime::MIME_TYPES[".manifest"] = "text/cache-manifest"
 end
 
 set :public, File.dirname(__FILE__) + '/public'
