@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>First 65 magic image creator</title>
+  <title>GMAP test</title>
   <meta name="description" content="Questions app">
   <meta name="author" content="Anders Fisher">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -15,64 +15,12 @@
 </head>
 
 <body>
-  <header>
-		<div class='first65logo'>
-			<img src="/img/first65logo.png" width="100" height="100" alt="First65logo">
-		</div>	
-	
-		<div class='headerCol1'>
-			<p>The First Sixty-Five</p>
-			<p>01473 487110</p>
-		</div>
-		
-		<div class="headerCol2">
-			<p>Floor 2, Jarman House</p>
-			<p>2-4 Northgate Street</p>
-			<p>Ipswich, Suffolk IP1 4EB</p>
-		</div>
-		<canvas id="surface"></canvas>
-  </header>
+  <!-- start -->
+  <div id="google-directions" data-endpoint="IP1 3bz" data-placeholder="hello chris" data-directions="true" data-map="true"></div>
 
-  <div id="container">
-
-    <article role="main">
-			<p class="question">
-				<span class="option true">iPad</span>
-				<span class="or">or</span>
-				<span class="option">HD</span>
-			</p>
-			<p class="question">
-				<span class="option true">Nina</span>
-				<span class="or">or</span>
-				<span class="option">James</span>
-			</p>
-			<p class="question">
-				<span class="option true">Mouse</span>
-				<span class="or">or</span>
-				<span class="option">Elephant</span>
-			</p>
-			<p class="question">
-				<span class="option true">Crowded</span>
-				<span class="or">or</span>
-				<span class="option">Secluded</span>
-			</p>
-			<p><a href="#" id="go">GO!</a></p>
-			<div class="clear"></div>
-		</article>
-		<aside>
-			<p>Olympic bobsleigh runs stretch for thousands of metres, but races are won and lost in the first sixty-five.</p>
-			<p>Everything goes into the initial push; it demands power, speed, flexibility and elegance. Because once an advantage is created, it’s much easier to build momentum.</p>
-			<p>Great bobsleigh teams are like smart businesses – both understand the art of the start.
-				The First Sixty-Five works with businesses who want to create and explore new and profitable opportunities in an ever-changing world.</p>
-			<p>Through bright ideas and powerful applications, we empower businesses to have interesting, worthwhile and seamless interactions with their customers.</p>
-			<p>Our skill and experience is a formidable blend of business strategy, creative flair and programming expertise.</p>
-			<p>Years of practical knowledge have demonstrated to us that the digital revolution has created a business environment like never before. So in a time where the possibilities are never ending, we never stop starting.</p>
-    </aside>
-  </div> <!--! end of #container -->
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="/js/libs/jquery-1.5.min.js"></script>
-	<script src="/js/libs/underscore-1.1.4.min.js"></script>
-	<script src="/js/libs/processing-1.2.0.min.js"></script>
- 	<script src="/js/libs/coffee-script.js"></script>
-  <script type="text/coffeescript" src="/js/image_maker.coffee"></script>
+	<script src="/js/gmap.js"></script>
+  <!-- end -->
 </body>
 </html>
