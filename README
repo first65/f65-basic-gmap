@@ -1,0 +1,68 @@
+This little google maps module is designed to make adding directions to an address as easy as possible to include.
+
+It's included as a basic thin/sinatra app but it's javascript so it should work in most places.
+
+RUNNING EXAMPLE INSTRUCTIONS
+
+1. git clone this repo
+
+2. cd /*insert dir name here*/
+
+3. thin start
+
+4. Open your browser at localhost:3000
+
+
+INSTALLATION INSTRUCTIONS
+
+1. Make sure that the f65-gmap.js file is on your server.
+
+2. Make sure that jquery is included and active in your document.
+
+3. Include the google maps api in the head of your document.
+
+4. Include a div element a bit like this: "<div id="google-directions" data-endpoint="IP1 3BZ" data-placeholder="enter postcode" data-link-text="get directions" data-directions="true" data-map="true"></div>".
+
+5. Check to make sure the attributes of this div match your preferences (see below).
+	data-endpoint : the endpoint postcode of your journey.
+	data-placeholder : the placeholder text for the textfield.
+	data-link-text : the text inside the activation link.
+	data-directions : true or false depending if you want directions included.
+	data-map : true or false depending if you want a map included.
+
+6. Make sure you style the elements accordingly. Below is an example of some SASS generated CSS for the various elements.
+
+div#google-directions {
+  width: 300px;
+  padding: 5px;
+  background: #ccc; }
+  div#google-directions div.gmap-section {
+    margin-top: 5px;
+    padding: 5px;
+    display: none;
+    background: #efefef; }
+    div#google-directions div.gmap-section#controls {
+      margin-top: 0;
+      display: block; }
+      div#google-directions div.gmap-section#controls input.text {
+        padding: 5px;
+        margin-right: 5px; }
+      div#google-directions div.gmap-section#controls a.get-directions {
+        color: #fff;
+        background: #ccc;
+        padding: 5px 7px;
+        text-decoration: none; }
+        div#google-directions div.gmap-section#controls a.get-directions:hover {
+          background: #333; }
+    div#google-directions div.gmap-section#map {
+      height: 300px; }
+
+7. Enjoy!
+
+any questions please contact anders@first65.com
+
+Thanks
+
+Anders
+
+The First 65.

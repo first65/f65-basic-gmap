@@ -1,146 +1,24 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-ins {
-  background-color: #ff9;
-  color: #000;
-  text-decoration: none; }
-
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
-  font-weight: bold; }
-
-del {
-  text-decoration: line-through; }
-
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-/**
- * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
- */
-body {
-  font: 13px/1.231 sans-serif;
-  *font-size: small; }
-
-/* Hack retained to preserve specificity */
-select, input, textarea, button {
-  font: 99% sans-serif; }
-
-/**
- * Primary styles
- *
- * Authors: James Kindred, Anders Fisher
- */
-body, select, input, textarea {
-  background: #0b432c;
-  color: white;
-  font-family: "HelveticaNeue-Medium", sans-serif; }
-
-header {
-  background: #333;
-  padding: 20px; }
-  header div {
-    margin-right: 30px;
-    line-height: 20px;
-    font-size: 12px;
-    width: 135px;
-    vertical-align: top;
-    display: inline-block; }
-  header div.headerCol {
-    margin-top: 15px; }
-  header canvas {
-    display: none; }
-
-.clear {
-  clear: both; }
-
-#container {
-  width: 700px;
-  margin: 0 auto; }
-  #container article p {
-    padding: 20px 0 0;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    font-family: "HelveticaNeue-Bold", sans-serif;
-    font-size: 30px;
-    text-shadow: 0px 2px 2px #171718;
-    text-align: center; }
-    #container article p span.option {
-      font-family: Palatino, serif;
-      font-style: italic;
-      font-size: 50px;
-      width: 200px; }
-      #container article p span.option.selected {
-        text-shadow: 0px 2px 2px white; }
-    #container article p span.or {
-      font-size: 20px;
-      margin: 0 20px;
-      position: relative;
-      top: -10px; }
-    #container article p #go {
-      background: white;
-      color: #0b432c;
-      width: auto;
-      padding: 5px 7px;
-      text-decoration: none;
-      text-shadow: none; }
-  #container aside {
-    margin: 0 auto;
-    width: 700px;
-    margin-left: auto;
-    margin-bottom: 150px;
-    margin-top: 20px;
-    -moz-column-count: 2;
-    -moz-column-gap: 40px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 40px;
-    column-count: 2;
-    column-gap: 40px; }
-    #container aside p {
-      line-height: 20px;
-      font-size: 12px;
-      margin-bottom: 10px; }
+div#google-directions {
+  width: 300px;
+  padding: 5px;
+  background: #ccc; }
+  div#google-directions div.gmap-section {
+    margin-top: 5px;
+    padding: 5px;
+    display: none;
+    background: #efefef; }
+    div#google-directions div.gmap-section#controls {
+      margin-top: 0;
+      display: block; }
+      div#google-directions div.gmap-section#controls input.text {
+        padding: 5px;
+        margin-right: 5px; }
+      div#google-directions div.gmap-section#controls a.get-directions {
+        color: #fff;
+        background: #ccc;
+        padding: 5px 7px;
+        text-decoration: none; }
+        div#google-directions div.gmap-section#controls a.get-directions:hover {
+          background: #333; }
+    div#google-directions div.gmap-section#map {
+      height: 300px; }

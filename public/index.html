@@ -1,26 +1,21 @@
 <!doctype html>
-<html lang="en" manifest="f65_questions.manifest">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>GMAP test</title>
-  <meta name="description" content="Questions app">
+  <meta name="description" content="Basic GMap implementation">
   <meta name="author" content="Anders Fisher">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
   <!-- start -->
-  <div id="google-directions" data-endpoint="IP1 3bz" data-placeholder="hello chris" data-directions="true" data-map="true"></div>
-
+  <div id="google-directions" data-endpoint="IP1 3BZ" data-placeholder="enter postcode" data-link-text="get directions" data-directions="true" data-map="true"></div>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="/js/libs/jquery-1.5.min.js"></script>
-	<script src="/js/gmap.js"></script>
+	<script src="/js/f65-gmap.js"></script>
   <!-- end -->
 </body>
 </html>
